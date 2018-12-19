@@ -1,36 +1,116 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml"
+<html lang="pt" xmlns="http://www.w3.org/1999/xhtml"
       xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorator="'layouts/LayoutPadrao'">
 
->
+<head></head>
 
 <body>
 
-<h1>
-    Olá! Thymelef Configurado!!
-</h1>
-
-        <!--<div th:each="erro : ${#fields.detailedErrors('${cerveja.*}')}">  DESSA FORMA É PARA USAR A DIV FORA DO FORM (A DIFERENÇA É QUE TEM QUE PASSAR O OBJETO CERVEJA DENTRO DO ERRORS)
-            <span th:text="${erro.message}"></span>
-        </div>-->
-    <form method="POST" th:object="${cerveja}">
-        <span th:text="${mensagem}"></span>
-            <div th:each="erro : ${#fields.detailedErrors()}">
-                <span th:text="${erro.message}"></span>
+    <section layout:fragment="conteudo">
+        <div class="page-header">
+            <div class="container-fluid">
+                <h1>
+                    Cadastro de Cerveja
+                </h1>
             </div>
-        <br>
-        <labe for="sku"> Sku:</labe>
-            <input type="text" id="sku" th:field="*{sku}"> <!-- QUANDO USADO O TH:FIELD ao inves do NAME, ele mantem o nome na tela-->
-        </br>
-        <label for="nome"> Nome:</label>
-            <input type="text" id="nome" th:field="*{nome}">
-        </br>
-        <label for="descricao">Descrição</label>
-            <textarea rows="3" cols="30" id="descricao"  th:field="*{descricao}"></textarea>
-        <br>
-            <input type="submit" value="Salvar">
+        </div>
 
-    </form>
+        <div class="container-fluid">
+
+            <form method="POST" th:object="${cerveja}" class="form-vertical  js-form-loading">
+
+                <div class="row">
+                    <div class="col-sm-2 form-group">
+                        <label for="sku">Sku:</label>
+                        <input id="sku" type="text" class="form-control"/>
+                    </div>
+                    <div class="col-sm-10 form-group">
+                        <label for="nome">Nome:</label>
+                        <input id="nome" type="text" class="form-control"/>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="descricao">Descrição</label>
+                    <textarea id="descricao" rows="3" class="form-control"></textarea>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-3 form-group">
+                            <label for="estilo">Estilo</label>
+                            <div class="bw-field-action">
+                                <select id="estilo" class="form-control"/>
+                                    <option value="">Selecione o Estilo</option>
+                                    <option value="1">Pale Ale</option>
+                                <select/>
+                                <div clas="bw-field-action__icon">
+                                    <a href="#" data-toggle="modal" data-target="#modalCadastroRapidoEstilo">
+                                        <i class="glyphicon glyphicon-plus-sign bw-glyphicon-large"></i>
+                                    </a>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="col-sm-3 form-group">
+                        <label for="sabor">Sabor</label>
+                        <select id="sabor" class="form-control"/>
+                            <option value="">Selecione o Sabor</option>
+                            <option value="1">Adocidada</option>
+                        <select/>
+                    </div>
+
+                    <div class="col-sm-3 form-group">
+                        <label for="teorAlcoolico">Teor Alcolico</label>
+                        <div class="input-group">
+                            <input id="teorAlcoolico" type="text" class="form-control js-decimal" />
+                            <div class="input-group-addon">%</div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-sm-6 form-group">
+                        <label for="origem">Origem</label>
+                        <div>
+                            <div class="radio radio-inline">
+                                <input type="radio" name="origem">
+                                <label> Nacional </label>
+                            </div>
+                            <div class="radio radio-inline">
+                                <input type="radio" name="origem">
+                                <label> Internacional </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-3 form-group">
+                        <label for="preco">Preço</label>
+                            <div class="input-group">
+                                <div class="input-group-addon">R$</div>
+                                    <input id="preco" type="text" class="form-control  js-decimal" />
+                            </div>
+                    </div>
+                    <div class="col-sm-3 form-group">
+                        <label for="comissao">Comissão</label>
+                            <div class="input-group">
+                                <div class="input-group-addon">%</div>
+                                <input id="comissao" type="text" class="form-control  js-decimal" />
+                            </div>
+                    </div>
+                    <div class="col-sm-3 form-group">
+                        <label for="estoque">Estoque</label>
+                        <input id="estoque" type="text" class="form-control js-plain" />
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <button class="btn  btn-primary" type="submit">Salvar</button>
+                </div>
+
+            </form>
+        </div>
+        <div th:replace="estilo/CadastroRapidoEstilo :: modal"></div>
+    </section>
 
 </body>
 </html>

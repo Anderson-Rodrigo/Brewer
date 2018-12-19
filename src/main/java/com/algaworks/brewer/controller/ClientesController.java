@@ -1,34 +1,28 @@
 package com.algaworks.brewer.controller;
 
-import com.algaworks.brewer.model.Cerveja;
-import org.springframework.stereotype.Controller;
+import com.algaworks.brewer.model.Clientes;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
-
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import javax.validation.Valid;
 
-@Controller
-public class CervejasController {
-
+public class ClientesController {
     @RequestMapping("/cervejas/novo")
-    public String novo(Cerveja cerveja) {
-        return "cerveja/CadastroCerveja";
+    public String novo(Clientes clientes) {
+        return "cerveja/CadastroClientes";
     }
 
     @RequestMapping(value = "/cervejas/novo", method = RequestMethod.POST)
-    public String cadastrar(@Valid Cerveja cerveja, BindingResult result, Model model, RedirectAttributes attributes) {
+    public String cadastrar(@Valid Clientes clientes, BindingResult result, Model model, RedirectAttributes attributes) {
         if (result.hasErrors()) {//AQUI O FOWARD RETORNA O QUE EU PRECISO
-            return novo(cerveja);
+            return novo(clientes);
         }
 
         // Salvar no banco de dados...
-        attributes.addFlashAttribute("mensagem", "Cerveja salva com sucesso!");
-        System.out.println(">>> sku: " + cerveja.getSku() + "Nome: " + cerveja.getNome() + "Descrição: " + cerveja.getDescricao());
+        attributes.addFlashAttribute("mensagem", "Cliente salva com sucesso!");
         return "redirect:/cervejas/novo";//NO REDIRECT RETORNA PRA OND EEU QUISER
     }
-
 }
