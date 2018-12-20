@@ -1,1 +1,9 @@
+com\algaworks\brewer\controller\CidadesController.class
+com\algaworks\brewer\controller\EstiloController.class
+com\algaworks\brewer\controller\ClientesController.class
 com\algaworks\brewer\model\Cerveja.class
+com\algaworks\brewer\controller\UsuariosController.class
+com\algaworks\brewer\model\Usuarios.class
+com\algaworks\brewer\model\Cidades.class
+com\algaworks\brewer\model\Estilo.class
+com\algaworks\brewer\model\Clientes.class
