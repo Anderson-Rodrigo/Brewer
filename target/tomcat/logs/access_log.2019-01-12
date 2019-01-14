@@ -1,0 +1,16 @@
+0:0:0:0:0:0:0:1 - - [12/Jan/2019:10:40:22 -0200] "GET /brewer/cervejas/novo HTTP/1.1" 200 11682 http-bio-8080-exec-1 7242
+0:0:0:0:0:0:0:1 - - [12/Jan/2019:10:40:22 -0200] "GET /brewer/stylesheets/brewer.css HTTP/1.1" 304 - http-bio-8080-exec-3 201
+0:0:0:0:0:0:0:1 - - [12/Jan/2019:10:40:22 -0200] "GET /brewer/images/logo.png HTTP/1.1" 304 - http-bio-8080-exec-4 232
+0:0:0:0:0:0:0:1 - - [12/Jan/2019:10:40:22 -0200] "GET /brewer/layout/javascripts/algaworks.min.js HTTP/1.1" 304 - http-bio-8080-exec-9 3
+0:0:0:0:0:0:0:1 - - [12/Jan/2019:10:40:22 -0200] "GET /brewer/layout/stylesheets/algaworks.min.css HTTP/1.1" 304 - http-bio-8080-exec-6 231
+0:0:0:0:0:0:0:1 - - [12/Jan/2019:10:40:22 -0200] "GET /brewer/layout/stylesheets/vendors.min.css HTTP/1.1" 304 - http-bio-8080-exec-8 200
+0:0:0:0:0:0:0:1 - - [12/Jan/2019:10:40:23 -0200] "GET /brewer/javascripts/vendors/jquery.maskMoney.min.js HTTP/1.1" 304 - http-bio-8080-exec-8 11
+0:0:0:0:0:0:0:1 - - [12/Jan/2019:10:40:23 -0200] "GET /brewer/javascripts/brewer.js HTTP/1.1" 304 - http-bio-8080-exec-6 17
+0:0:0:0:0:0:0:1 - - [12/Jan/2019:10:40:23 -0200] "GET /brewer/layout/stylesheets/application.css HTTP/1.1" 304 - http-bio-8080-exec-7 228
+0:0:0:0:0:0:0:1 - - [12/Jan/2019:10:40:23 -0200] "GET /brewer/layout/javascripts/vendors.min.js HTTP/1.1" 304 - http-bio-8080-exec-5 402
+0:0:0:0:0:0:0:1 - - [12/Jan/2019:10:40:23 -0200] "GET /brewer/layout/vendors/bootstrap/fonts/glyphicons-halflings-regular.woff2 HTTP/1.1" 304 - http-bio-8080-exec-5 65
+0:0:0:0:0:0:0:1 - - [12/Jan/2019:10:40:23 -0200] "GET /brewer/layout/vendors/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.1 HTTP/1.1" 304 - http-bio-8080-exec-5 6
+0:0:0:0:0:0:0:1 - - [12/Jan/2019:10:42:58 -0200] "GET /brewer/cervejas/novo HTTP/1.1" 200 11682 http-bio-8080-exec-1 7693
+0:0:0:0:0:0:0:1 - - [12/Jan/2019:10:44:33 -0200] "GET /brewer/cervejas/novo HTTP/1.1" 200 11682 http-bio-8080-exec-1 7309
+0:0:0:0:0:0:0:1 - - [12/Jan/2019:10:47:18 -0200] "GET /brewer/cervejas/novo HTTP/1.1" 200 11682 http-bio-8080-exec-2 7759
+0:0:0:0:0:0:0:1 - - [12/Jan/2019:10:47:18 -0200] "GET /brewer/cervejas/novo HTTP/1.1" 200 11682 http-bio-8080-exec-1 7841

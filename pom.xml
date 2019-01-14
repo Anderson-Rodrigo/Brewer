@@ -16,6 +16,8 @@
         <failOnMissingWebXml>false</failOnMissingWebXml>
         <java.version>1.8</java.version>
         <maven-compiler-plugins.version>3.2</maven-compiler-plugins.version>
+        <flyway-maven-plugin.version>4.0.2</flyway-maven-plugin.version>
+        <mysql-connector-java.version>5.1.39</mysql-connector-java.version>
 
         <!-- Spring MVC -->
         <spring-framework.version>4.3.0.RELEASE</spring-framework.version>
@@ -39,11 +41,6 @@
         <!-- JPA / Hibernate -->
         <hibernate.version>5.1.0.Final</hibernate.version>
 
-        <!-- FlyWay -->
-        <flyway-maven-plugin.version>4.0.2</flyway-maven-plugin.version>
-
-        <!-- Mysql -->
-        <mysql-connector-java.version>5.1.39</mysql-connector-java.version>
     </properties>
 
     <build>
@@ -68,9 +65,15 @@
                 <groupId>org.flywaydb</groupId>
                 <artifactId>flyway-maven-plugin</artifactId>
                 <version>${flyway-maven-plugin.version}</version>
-                    <configuration>
-                        <driver>com.mysql.jdbc.Driver</driver>
-                    </configuration>
+                <configuration>
+                    <driver>com.mysql.jdbc.Driver</driver>
+                    <url>jdbc:mysql://localhost/brewer?useSSL=false&amp;useTimezone=true&amp;serverTimezone=UTC</url>
+                    <user>root</user>
+                    <password>root</password>
+                    <schemas>
+                        <schema>brewer</schema>
+                    </schemas>
+                </configuration>
             </plugin>
         </plugins>
     </build>
@@ -184,6 +187,7 @@
             <version>${mysql-connector-java.version}</version>
             <scope>provided</scope>
         </dependency>
+
 
     </dependencies>
     <repositories>
