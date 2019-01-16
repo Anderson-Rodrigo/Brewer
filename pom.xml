@@ -41,6 +41,9 @@
         <!-- JPA / Hibernate -->
         <hibernate.version>5.1.0.Final</hibernate.version>
 
+        <!-- Spring DATA / JPA -->
+        <spring-data-jpa.version>1.10.2.RELEASE</spring-data-jpa.version>
+
     </properties>
 
     <build>
@@ -66,7 +69,7 @@
                 <artifactId>flyway-maven-plugin</artifactId>
                 <version>${flyway-maven-plugin.version}</version>
                 <configuration>
-                    <driver>com.mysql.jdbc.Driver</driver>
+                    <driver>com.mysql.cj.jdbc.Driver</driver>
                     <url>jdbc:mysql://localhost/brewer?useSSL=false&amp;useTimezone=true&amp;serverTimezone=UTC</url>
                     <user>root</user>
                     <password>root</password>
@@ -188,6 +191,12 @@
             <scope>provided</scope>
         </dependency>
 
+        <!-- Spring DATA / JPA -->
+        <dependency>
+            <groupId>org.springframework.data</groupId>
+            <artifactId>spring-data-jpa</artifactId>
+            <version>${spring-data-jpa.version}</version>
+        </dependency>
 
     </dependencies>
     <repositories>

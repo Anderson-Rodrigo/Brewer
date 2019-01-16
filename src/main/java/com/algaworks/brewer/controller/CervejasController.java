@@ -1,8 +1,10 @@
 package com.algaworks.brewer.controller;
 
 import com.algaworks.brewer.model.Cerveja;
+import com.algaworks.brewer.repository.Cervejas;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
@@ -16,10 +18,13 @@ import javax.validation.Valid;
 @Controller
 public class CervejasController {
 
-    //private static final Logger logger = LoggerFactory.getLogger(CervejasController.class);
+    @Autowired
+    private Cervejas cervejas;
 
+    //private static final Logger logger = LoggerFactory.getLogger(CervejasController.class);
     @RequestMapping("/cervejas/novo")
     public String novo(Cerveja cerveja) {
+        cervejas.findAll();
         return "cerveja/CadastroCerveja";
     }
 

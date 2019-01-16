@@ -10,5 +10,7 @@ D:\Brewer\src\main\java\com\algaworks\brewer\controller\EstiloController.java
 D:\Brewer\src\main\java\com\algaworks\brewer\model\Cidades.java
 D:\Brewer\src\main\java\com\algaworks\brewer\model\Cerveja.java
 D:\Brewer\src\main\java\com\algaworks\brewer\model\Usuarios.java
+D:\Brewer\src\main\java\com\algaworks\brewer\repository\Cervejas.java
 D:\Brewer\src\main\java\com\algaworks\brewer\controller\CidadesController.java
 D:\Brewer\src\main\java\com\algaworks\brewer\model\Sabor.java
+D:\Brewer\src\main\java\com\algaworks\brewer\config\JPAConfig.java
