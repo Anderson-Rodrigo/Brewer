@@ -39,27 +39,28 @@
                 </div>
 
                 <div class="row">
-                    <div class="col-sm-3 form-group">
-                            <label for="estilo">Estilo</label>
-                            <div class="bw-field-action">
-                                <select id="estilo" class="form-control"/>
-                                    <option value="">Selecione o Estilo</option>
-                                    <option value="1">Pale Ale</option>
-                                <select/>
-                                <div clas="bw-field-action__icon">
-                                    <a href="#" data-toggle="modal" data-target="#modalCadastroRapidoEstilo">
-                                        <i class="glyphicon glyphicon-plus-sign bw-glyphicon-large"></i>
-                                    </a>
-                                </div>
-                            </div>
-                    </div>
-                    <div class="col-sm-3 form-group">
-                        <label for="sabor">Sabor</label>
-                        <select id="sabor" class="form-control"/>
-                            <option value="">Selecione o Sabor</option>
-                            <option value="1">Adocidada</option>
-                        <select/>
-                    </div>
+                    <div class="col-sm-3  form-group">
+					<label for="estilo">Estilo</label>
+					<div class="bw-field-action">
+						<select id="estilo" class="form-control">
+							<option value="">Selecione o estilo</option>
+							<option th:each="estilo : ${estilos}" th:value="${estilo.codigo}" th:text="${estilo.nome}">Pale lager</option>
+						</select>
+						
+						<div class="bw-field-action__icon">
+							<a href="#" data-toggle="modal" data-target="#modalCadastroRapidoEstilo">
+								<i class="glyphicon  glyphicon-plus-sign  bw-glyphicon-large"></i>
+							</a>
+						</div>
+					</div>
+					</div>
+                    <div class="col-sm-3  form-group">
+					<label for="sabor">Sabor</label>
+					<select id="sabor" class="form-control">
+						<option value="">Selecione o sabor</option>
+						<option th:each="sabor : ${sabores}" th:value="${sabor}" th:text="${sabor.descricao}">Adocicada</option>
+					</select>
+				</div>
 
                     <div class="col-sm-3 form-group">
                         <label for="teorAlcoolico">Teor Alcolico</label>
@@ -67,19 +68,16 @@
                             <input id="teorAlcoolico" type="text" class="form-control js-decimal" />
                             <div class="input-group-addon">%</div>
                         </div>
-                    </div>
-
+                    </div>        
                     <div class="col-lg-3 col-sm-6 form-group">
                         <label for="origem">Origem</label>
                         <div>
-                            <div class="radio radio-inline">
-                                <input type="radio" name="origem">
-                                <label> Nacional </label>
-                            </div>
-                            <div class="radio radio-inline">
-                                <input type="radio" name="origem">
-                                <label> Internacional </label>
-                            </div>
+                            <th:block th:each="origem : ${origens}">
+                            	<div class="radio radio-inline">
+	                                <input th:id="|id_${origem}|" type="radio" th:value="${origem}" name="origem">
+	                                <label th:for="|id_${origem}|" th:text="${origem.descricao}"> Nacional </label>
+                                </div>
+                            </th:block>
                         </div>
                     </div>
                 </div>
