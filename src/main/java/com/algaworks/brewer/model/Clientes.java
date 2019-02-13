@@ -2,9 +2,20 @@ package com.algaworks.brewer.model;
 
 import org.hibernate.validator.constraints.NotBlank;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
 import javax.validation.constraints.Size;
 
+@Entity
+@Table(name = "clientes")
 public class Clientes {
+	
+	@Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long codigo;
     @NotBlank(message = "Nome é obrigatório")
     private String nome;
     @NotBlank(message = "Cpf é obrigatório")
@@ -35,4 +46,13 @@ public class Clientes {
     public void setTipoPessoa(String tipoPessoa) {
         this.tipoPessoa = tipoPessoa;
     }
+
+	public Long getCodigo() {
+		return codigo;
+	}
+
+	public void setCodigo(Long codigo) {
+		this.codigo = codigo;
+	}
+    
 }

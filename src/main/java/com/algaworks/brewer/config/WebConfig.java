@@ -1,6 +1,8 @@
 package com.algaworks.brewer.config;
 
 import com.algaworks.brewer.controller.CervejasController;
+import com.algaworks.brewer.controller.converter.EstiloConverter;
+
 import nz.net.ultraq.thymeleaf.LayoutDialect;
 import org.springframework.beans.BeansException;
 import org.springframework.context.ApplicationContext;
@@ -8,6 +10,8 @@ import org.springframework.context.ApplicationContextAware;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.core.convert.support.DefaultConversionService;
+import org.springframework.format.support.FormattingConversionService;
 import org.springframework.web.servlet.ViewResolver;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
@@ -60,5 +64,12 @@ public class WebConfig extends WebMvcConfigurerAdapter implements ApplicationCon
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {//ADICIONAR METODOS QUE TNAO TENHAM CONTROLER
         registry.addResourceHandler("/**").addResourceLocations("classpath:/static/");
+    }
+    
+    @Bean
+    public FormattingConversionService mvcConversionService() {
+    	DefaultConversionService conversionService = new DefaultConversionService();
+    	conversionService.addConverter(new EstiloConverter());
+    	return null;
     }
 }
