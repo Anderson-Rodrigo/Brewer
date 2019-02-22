@@ -4,6 +4,8 @@ import com.algaworks.brewer.model.Cerveja;
 import com.algaworks.brewer.model.Origem;
 import com.algaworks.brewer.model.Sabor;
 import com.algaworks.brewer.repository.Estilos;
+import com.algaworks.brewer.service.CadastroCervejaService;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -22,28 +24,27 @@ public class CervejasController {
 	@Autowired
 	private Estilos estilos;
 	
-    //private static final Logger logger = LoggerFactory.getLogger(CervejasController.class);
-    @RequestMapping("/cervejas/novo")
-    public ModelAndView novo(Cerveja cerveja) {  
-    	ModelAndView mv = new ModelAndView("cerveja/CadastroCerveja");
-    	mv.addObject("sabores", Sabor.values());
-    	mv.addObject("estilos", estilos.findAll());
-    	mv.addObject("origens", Origem.values());
-        return mv;
-    }
+	@Autowired
+	private CadastroCervejaService cadastroCervejaService;
 
-    @RequestMapping(value = "/cervejas/novo", method = RequestMethod.POST)
-    public ModelAndView cadastrar(@Valid Cerveja cerveja, BindingResult result, Model model, RedirectAttributes attributes) {
-		/*
-		 * if (result.hasErrors()) {//AQUI O FOWARD RETORNA O QUE EU PRECISO return
-		 * novo(cerveja); }
-		 */
-
-        // Salvar no banco de dados...
-        attributes.addFlashAttribute("mensagem", "Cerveja salva com sucesso!");
-        System.out.println(">>> sku: " + cerveja.getSku() + "Nome: " + cerveja.getNome() + "Descrição: " + cerveja.getDescricao());
-        System.out.println(">>> origem: " + cerveja.getOrigem());
-        return new ModelAndView("redirect:/cervejas/novo");//NO REDIRECT RETORNA PRA OND EEU QUISER
-    }
-
+	@RequestMapping("/cervejas/novo")
+	public ModelAndView novo(Cerveja cerveja) {
+		ModelAndView mv = new ModelAndView("cerveja/CadastroCerveja");
+		mv.addObject("sabores", Sabor.values());
+		mv.addObject("estilos", estilos.findAll());
+		mv.addObject("origens", Origem.values());
+		return mv;
+	}
+	
+	@RequestMapping(value = "/cervejas/novo", method = RequestMethod.POST)
+	public ModelAndView cadastrar(@Valid Cerveja cerveja, BindingResult result, Model model, RedirectAttributes attributes) {
+		if (result.hasErrors()) {
+			return novo(cerveja);
+		}
+		
+		cadastroCervejaService.salvar(cerveja);
+		attributes.addFlashAttribute("mensagem", "Cerveja salva com sucesso!");
+		return new ModelAndView("redirect:/cervejas/novo");
+	}
+   
 }
