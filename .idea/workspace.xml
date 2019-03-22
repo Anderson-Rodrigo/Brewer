@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="31afd4ac-9bf2-43cd-8cbf-8f2c9083424b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/algaworks/brewer/model/Cerveja.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/algaworks/brewer/model/Cerveja.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,31 +18,49 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/META-INF/context.xml">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/algaworks/brewer/controller/CervejasController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="8" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="8" />
+            <state relative-caret-position="238">
+              <caret line="30" column="33" selection-start-line="30" selection-start-column="33" selection-end-line="30" selection-end-column="33" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/algaworks/brewer/controller/CervejasController.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/algaworks/brewer/model/Cerveja.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="26" column="27" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
+            <state relative-caret-position="748">
+              <caret line="45" column="13" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/cerveja/CadastroCerveja.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1833">
+              <caret line="108" selection-start-line="107" selection-start-column="16" selection-end-line="109" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/algaworks/brewer/validation/SKU.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="22" column="31" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/algaworks/brewer/config/JPAConfig.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/algaworks/brewer/validation/Comissao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="35" column="38" selection-start-line="35" selection-start-column="38" selection-end-line="35" selection-end-column="38" />
+            <state relative-caret-position="238">
+              <caret line="14" selection-start-line="14" selection-end-line="28" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -51,48 +69,12 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/algaworks/brewer/config/WebConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="535">
-              <caret line="79" column="21" selection-start-line="79" selection-start-column="21" selection-end-line="79" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/db/migration/V02__criar_coluna_quantidade_estoque_em_cerveja.sql">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="35" selection-start-line="1" selection-start-column="35" selection-end-line="1" selection-end-column="35" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/algaworks/brewer/repository/Cervejas.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="7" column="51" selection-start-line="7" selection-start-column="51" selection-end-line="7" selection-end-column="51" />
+            <state relative-caret-position="-196">
+              <caret line="35" column="13" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/algaworks/brewer/config/init/AppInitializer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="10" column="44" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#391#392#0" expanded="true" />
-                <element signature="e#443#444#0" expanded="true" />
-                <element signature="e#511#512#0" expanded="true" />
-                <element signature="e#563#564#0" expanded="true" />
-                <element signature="e#624#625#0" expanded="true" />
-                <element signature="e#665#666#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -130,7 +112,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/algaworks/brewer/model/Origem.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/algaworks/brewer/model/Sabor.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/algaworks/brewer/model/Estilo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/algaworks/brewer/model/Cerveja.java" />
         <option value="$PROJECT_DIR$/src/main/resources/db/migration/V01__criar_tabelas_estilo_e_cerveja.sql" />
         <option value="$PROJECT_DIR$/src/main/java/com/algaworks/brewer/repository/Cervejas.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/algaworks/brewer/config/init/AppInitializer.java" />
@@ -139,6 +120,9 @@
         <option value="$PROJECT_DIR$/src/main/resources/db/migration/V02_criar_coluna_quantidade_estoque_em_cerveja.sql" />
         <option value="$PROJECT_DIR$/src/main/webapp/META-INF/context.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/algaworks/brewer/validation/Valor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/algaworks/brewer/validation/Comissao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/algaworks/brewer/model/Cerveja.java" />
       </list>
     </option>
   </component>
@@ -235,8 +219,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="brewer" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-              <item name="init" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="brewer" type="b2602c69:ProjectViewProjectNode" />
@@ -246,6 +229,16 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="brewer" type="462c0819:PsiDirectoryNode" />
               <item name="controller" type="462c0819:PsiDirectoryNode" />
+              <item name="converter" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="brewer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Brewer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="brewer" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="brewer" type="b2602c69:ProjectViewProjectNode" />
@@ -261,7 +254,18 @@
               <item name="Brewer" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="brewer" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="brewer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Brewer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="brewer" type="462c0819:PsiDirectoryNode" />
+              <item name="validation" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="brewer" type="b2602c69:ProjectViewProjectNode" />
@@ -269,22 +273,23 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="migration" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="brewer" type="b2602c69:ProjectViewProjectNode" />
               <item name="Brewer" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="brewer" type="b2602c69:ProjectViewProjectNode" />
               <item name="Brewer" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="META-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="cerveja" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -294,20 +299,23 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ToolWindowJob Explorer.ShowToolbar" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547722971960" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551275332796" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.algaworks.brewer.model" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.algaworks.brewer.validation" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Projetos\Brewer\src\main\resources\static\images" />
       <recent name="C:\Projetos\Brewer\src\main\resources\templates\cidades" />
       <recent name="C:\Projetos\Brewer\src\main\resources\templates\cerveja" />
       <recent name="C:\Projetos\Brewer\src\main\resources\templates\cliente" />
       <recent name="C:\Projetos\Brewer\src\main\resources\templates\usuarios" />
-    </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.algaworks.brewer.model" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -403,7 +411,7 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49945828" visible="true" weight="0.2761194" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49945828" visible="true" weight="0.20735608" />
       <window_info id="Structure" order="1" sideWeight="0.5005417" side_tool="true" weight="0.26226014" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -443,20 +451,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/algaworks/brewer/config/WebConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/algaworks/brewer/model/Clientes.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/algaworks/brewer/controller/ClientesController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -466,72 +460,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/usuarios/CadastroUsuario.html" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/cliente/CadastroClientes.html" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/algaworks/brewer/model/Usuarios.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/algaworks/brewer/model/Cidades.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/algaworks/brewer/controller/UsuariosController.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/algaworks/brewer/controller/CidadesController.java" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/estilo/CadastroRapidoEstilo.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/estilo/CadastroEstilo.html" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/cerveja/CadastroCerveja.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="403">
-          <caret line="108" column="27" lean-forward="true" selection-start-line="107" selection-start-column="16" selection-end-line="109" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/algaworks/brewer/controller/EstiloController.java" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/cidades/CadastroCidades.html" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/log4j2.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="70" selection-start-line="9" selection-start-column="70" selection-end-line="9" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/algaworks/brewer/model/Origem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-          <folding>
-            <element signature="e#150#151#0" expanded="true" />
-            <element signature="e#192#193#0" expanded="true" />
-            <element signature="e#227#228#0" expanded="true" />
-            <element signature="e#259#260#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/algaworks/brewer/model/Estilo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="23" column="33" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
-          <folding>
-            <element signature="e#407#408#0" expanded="true" />
-            <element signature="e#436#437#0" expanded="true" />
-            <element signature="e#478#479#0" expanded="true" />
-            <element signature="e#514#515#0" expanded="true" />
-            <element signature="e#364#365#0" expanded="true" />
-            <element signature="e#391#392#0" expanded="true" />
-            <element signature="e#431#432#0" expanded="true" />
-            <element signature="e#463#464#0" expanded="true" />
-            <element signature="e#956#957#0" expanded="true" />
-            <element signature="e#999#1000#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/algaworks/brewer/model/Sabor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
-          <folding>
-            <element signature="e#267#268#0" expanded="true" />
-            <element signature="e#309#310#0" expanded="true" />
-            <element signature="e#344#345#0" expanded="true" />
-            <element signature="e#375#376#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -549,30 +489,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/algaworks/brewer/model/Cerveja.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-          <folding>
-            <element signature="e#2403#2404#0" expanded="true" />
-            <element signature="e#2439#2440#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/.classpath">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/META-INF/context.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/algaworks/brewer/config/init/AppInitializer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="8" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/algaworks/brewer/controller/CervejasController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="26" column="27" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
+        <state relative-caret-position="238">
+          <caret line="14" column="65" selection-start-line="14" selection-start-column="65" selection-end-line="14" selection-end-column="65" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#443#444#0" expanded="true" />
+            <element signature="e#511#512#0" expanded="true" />
+            <element signature="e#563#564#0" expanded="true" />
+            <element signature="e#624#625#0" expanded="true" />
+            <element signature="e#665#666#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -581,32 +511,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="35" selection-start-line="1" selection-start-column="35" selection-end-line="1" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/algaworks/brewer/repository/Cervejas.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="7" column="51" selection-start-line="7" selection-start-column="51" selection-end-line="7" selection-end-column="51" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/algaworks/brewer/config/init/AppInitializer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="10" column="44" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#391#392#0" expanded="true" />
-            <element signature="e#443#444#0" expanded="true" />
-            <element signature="e#511#512#0" expanded="true" />
-            <element signature="e#563#564#0" expanded="true" />
-            <element signature="e#624#625#0" expanded="true" />
-            <element signature="e#665#666#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -619,8 +523,128 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/algaworks/brewer/config/JPAConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="35" column="38" selection-start-line="35" selection-start-column="38" selection-end-line="35" selection-end-column="38" />
+        <state relative-caret-position="629">
+          <caret line="37" column="38" selection-start-line="37" selection-start-column="38" selection-end-line="37" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/META-INF/context.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="8" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/algaworks/brewer/model/Cidades.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/algaworks/brewer/model/Clientes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
+          <folding>
+            <element signature="e#956#957#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/algaworks/brewer/model/Estilo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="23" column="4" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/algaworks/brewer/model/Origem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/algaworks/brewer/model/Sabor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/algaworks/brewer/model/Usuarios.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/algaworks/brewer/controller/CervejasController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="30" column="33" selection-start-line="30" selection-start-column="33" selection-end-line="30" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/algaworks/brewer/repository/Cervejas.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="51" selection-start-line="10" selection-start-column="51" selection-end-line="10" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/algaworks/brewer/service/CadastroCervejaService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="37" lean-forward="true" selection-start-column="37" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/algaworks/brewer/config/WebConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-196">
+          <caret line="35" column="13" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/cerveja/CadastroCerveja.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1833">
+          <caret line="108" selection-start-line="107" selection-start-column="16" selection-end-line="109" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/algaworks/brewer/validation/SKU.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="22" column="31" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/algaworks/brewer/model/Cerveja.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="748">
+          <caret line="45" column="13" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/algaworks/brewer/validation/Comissao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" selection-start-line="14" selection-end-line="28" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

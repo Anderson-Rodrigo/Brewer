@@ -1,4 +1,5 @@
 com\algaworks\brewer\model\Sabor.class
+com\algaworks\brewer\validation\Comissao.class
 com\algaworks\brewer\config\init\AppInitializer.class
 com\algaworks\brewer\controller\CervejasController.class
 com\algaworks\brewer\repository\Cervejas.class
